@@ -506,39 +506,76 @@ const LawFirmLanding = () => {
               />
             </div>
 
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-white font-serif mb-4">Office Hours</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between text-slate-300">
-                    <span>Monday - Saturday</span>
-                    <span className="text-amber-400 font-semibold">10:30 AM - 7:30 PM</span>
-                  </div>
-                  <div className="flex justify-between text-slate-300">
-                    <span>Sunday</span>
-                    <span className="text-slate-500">Closed</span>
-                  </div>
-                  <p className="text-sm text-slate-400 pt-4 border-t border-amber-400/20">
-                    For urgent matters, please call +91 7004480307 for emergency consultation availability.
-                  </p>
-                </div>
-              </div>
+<div className="space-y-10 p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 shadow-xl border border-amber-400/20">
 
-              <div>
-                <h3 className="text-2xl font-bold text-white font-serif mb-4">Address</h3>
-                <p className="text-amber-400/90 text-sm font-semibold uppercase tracking-wide mb-2">Head office — Dehri</p>
-                <p className="text-slate-300 leading-relaxed mb-6">
-                  Above Aman Medical, Mohan Bigha<br />
-                  Dehri, Rohtas, Bihar, India
-                </p>
-                <p className="text-amber-400/90 text-sm font-semibold uppercase tracking-wide mb-2">Branch offices (BO)</p>
-                <ul className="text-slate-300 leading-relaxed space-y-1 list-disc list-inside">
-                  <li>BO — Ranchi</li>
-                  <li>BO — Dhanbad</li>
-                  <li>BO — Nagaon, Assam</li>
-                </ul>
-              </div>
-            </div>
+  {/* Office Hours */}
+  <div>
+    <h3 className="text-2xl font-bold text-white font-serif mb-5 tracking-wide">
+      Office Hours
+    </h3>
+
+    <div className="space-y-4 text-sm">
+      <div className="flex justify-between items-center bg-slate-800/60 px-4 py-3 rounded-lg">
+        <span className="text-slate-300">Monday - Saturday</span>
+        <span className="text-amber-400 font-semibold">10:30 AM - 7:30 PM</span>
+      </div>
+
+      <div className="flex justify-between items-center bg-slate-800/60 px-4 py-3 rounded-lg">
+        <span className="text-slate-300">Sunday</span>
+        <span className="text-slate-500">Closed</span>
+      </div>
+
+      <p className="text-xs text-slate-400 pt-4 border-t border-amber-400/20 leading-relaxed">
+        For urgent matters, please call{" "}
+        <span className="text-amber-400 font-semibold">+91 7004480307</span> for emergency consultation availability.
+      </p>
+    </div>
+  </div>
+
+  {/* Address Section */}
+  <div>
+    <h3 className="text-2xl font-bold text-white font-serif mb-5 tracking-wide">
+      Address
+    </h3>
+
+    {/* Head Office */}
+    <div className="mb-6 p-4 rounded-xl bg-slate-800/50 border border-amber-400/10">
+      <p className="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-2">
+        Head Office — Dehri
+      </p>
+      <p className="text-slate-300 leading-relaxed text-sm">
+        Above Aman Medical, Mohan Bigha<br />
+        Dehri, Rohtas, Bihar, India
+      </p>
+    </div>
+
+    {/* Branch Offices */}
+    <div>
+      <p className="text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
+        Branch Offices
+      </p>
+
+      <div className="grid gap-4 sm:grid-cols-2">
+
+        <div className="p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition border border-slate-700">
+          <p className="text-white font-semibold">Ranchi</p>
+          <p className="text-slate-400 text-sm">+91 8210713303</p>
+        </div>
+
+        <div className="p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition border border-slate-700">
+          <p className="text-white font-semibold">Dhanbad</p>
+          <p className="text-slate-400 text-sm">+91 7808221442</p>
+        </div>
+
+        <div className="p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition border border-slate-700 sm:col-span-2">
+          <p className="text-white font-semibold">Nagaon, Assam</p>
+          <p className="text-slate-400 text-sm">+91 8804900965</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
